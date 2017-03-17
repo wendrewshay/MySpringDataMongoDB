@@ -1,4 +1,4 @@
-package com.xwq.example;
+package com.xwq.common;
 
 import org.springframework.data.mongodb.core.MongoAction;
 import org.springframework.data.mongodb.core.WriteConcernResolver;

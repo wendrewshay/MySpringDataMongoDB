@@ -12,15 +12,16 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 
 import com.mongodb.MongoClient;
+import com.xwq.domain.Person;
 
 /**
- * 入门
+ * 入门增删改查
  * @author WQXia
  *
  */
-public class MongoApp {
+public class MongoApp1 {
 
-	private static final Log log = LogFactory.getLog(MongoApp.class);
+	private static final Log log = LogFactory.getLog(MongoApp1.class);
 	
 	public static void main(String[] args) throws Exception{
 		//使用MongoDbFactory实例来配置MongoTemplate

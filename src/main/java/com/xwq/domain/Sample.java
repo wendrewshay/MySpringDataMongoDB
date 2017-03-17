@@ -1,4 +1,4 @@
-package com.xwq.example;
+package com.xwq.domain;
 
 import org.springframework.data.mongodb.core.MongoTemplate;
 

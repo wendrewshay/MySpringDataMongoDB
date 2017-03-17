@@ -1,4 +1,4 @@
-package com.xwq.example;
+package com.xwq.common;
 
 import java.util.Set;
 

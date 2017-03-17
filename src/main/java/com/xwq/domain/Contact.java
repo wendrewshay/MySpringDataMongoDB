@@ -1,4 +1,4 @@
-package com.xwq.example;
+package com.xwq.domain;
 
 public abstract class Contact {
 

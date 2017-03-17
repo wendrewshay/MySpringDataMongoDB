@@ -18,8 +18,8 @@ import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoCredential;
 import com.mongodb.ServerAddress;
-import com.xwq.example.CustomMongoTypeMapper;
-import com.xwq.example.MyAppWriteConcernResolver;
+import com.xwq.common.CustomMongoTypeMapper;
+import com.xwq.common.MyAppWriteConcernResolver;
 
 /**
  * MongoDB配置
@@ -27,7 +27,7 @@ import com.xwq.example.MyAppWriteConcernResolver;
  *
  */
 @Configuration
-public class AppConfig extends AbstractMongoConfiguration{
+public class MongoConfig extends AbstractMongoConfiguration{
 
 	/**
 	 * 使用Spring的MongoClientFactoryBean注册一个com.mongodb.Mongo对象并启用Spring的异常转换支持

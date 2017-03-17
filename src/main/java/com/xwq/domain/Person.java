@@ -1,16 +1,26 @@
-package com.xwq.example;
+package com.xwq.domain;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.TypeAlias;
+import org.springframework.data.annotation.Version;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document
 @TypeAlias("pers")//为实体定义类型别名
 public class Person extends Contact{
 
-	private String id;
+	@Id private String id;
 	private String name;
 	private int age;
+	@Version //乐观锁机制，匹配版本
+	private Long version;
 	
 	public Person() {
 		
+	}
+	
+	public Person(String name) {
+		this.name = name;
 	}
 	
 	public Person(String name, int age) {
@@ -36,9 +46,17 @@ public class Person extends Contact{
 	public void setAge(int age) {
 		this.age = age;
 	}
+	public Long getVersion() {
+		return version;
+	}
+	
+	public void setVersion(Long version) {
+		this.version = version;
+	}
 	@Override
 	public String toString() {
 		return "Person[id="+id+",name="+name+",age="+age+"]";
 	}
+
 	
 }
