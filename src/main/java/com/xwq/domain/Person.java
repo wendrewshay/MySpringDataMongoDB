@@ -1,6 +1,7 @@
 package com.xwq.domain;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.PersistenceConstructor;
 import org.springframework.data.annotation.TypeAlias;
 import org.springframework.data.annotation.Version;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -23,6 +24,7 @@ public class Person extends Contact{
 		this.name = name;
 	}
 	
+	@PersistenceConstructor
 	public Person(String name, int age) {
 		this.name = name;
 		this.age  = age;
