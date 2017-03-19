@@ -33,6 +33,10 @@ public class Person2 {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
+	@Override
+	public String toString() {
+		return "Person2[id="+id+",firstname="+firstname+",lastname="+lastname+"]";
+	}
 	
 }
 
